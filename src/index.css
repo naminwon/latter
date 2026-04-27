@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Noto Sans KR', 'Pretendard', system-ui, sans-serif;
+  color: #2E2A4A;
+  background: #FFF8E7;
+  overscroll-behavior: none;
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
+}
+
+* { box-sizing: border-box; }
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+  user-select: none;
+}
+
+/* Papyrus-ish paper texture fallback */
+.paper-bg {
+  background:
+    radial-gradient(1200px 600px at 20% -10%, rgba(255,227,168,0.55), transparent 60%),
+    radial-gradient(900px 500px at 100% 110%, rgba(255,200,160,0.4), transparent 60%),
+    linear-gradient(180deg, #FFF8E7 0%, #FFF0D3 100%);
+}
+
+.card-stripe {
+  background:
+    repeating-linear-gradient(45deg, rgba(255,184,76,0.08) 0 10px, transparent 10px 20px);
+}
